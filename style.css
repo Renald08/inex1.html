@@ -1,0 +1,91 @@
+.video{
+	width: 800px;
+}
+
+.videobg{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+	.videobg{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media(max-aspect-ratio: 16/9){
+	.videobg{
+		width: auto;
+		height: 100%;
+	}
+}
+
+p{
+	color: #51729B;
+	font-family: "Georgia", serif;
+	text-align: center;
+	    margin: 10px 35px;
+
+}
+
+p1{color: #51729B;
+	font-family: "palatino", serif;
+	text-align: center;
+	margin: 10px 35px;
+
+}
+
+h2{
+	text-align: center;
+	color: #51729B;
+	font-family: "Georgia", serif;
+
+}
+
+
+body{
+	margin: 0
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-repeat: no-repeat;
+    background-image: url('jdk.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.box{
+	position: relative;
+    width: 620px;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #11182e;
+    border-radius: 50px;   
+}
+
+.box:after{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(40px);
+
+}
+
+
+.box:before,
+.box:after{
+
+background: linear-gradient(235deg,#7D71C2,#060c21,#4B8ED9);
+}
